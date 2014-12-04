@@ -1,0 +1,13 @@
+#!/bin/sh
+
+delimiter='# DO NOT DELETE THIS LINE -- make depend depends on it.'
+
+cp Makefile Makefile.bak
+
+(
+	sed "/^$delimiter/,\$d" Makefile.bak
+	echo
+	echo "$delimiter"
+	echo
+	g++ -MM $*
+) | uniq >Makefile
