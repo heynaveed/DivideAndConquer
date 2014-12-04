@@ -23,7 +23,7 @@ using namespace std;
  * 
  * */
 
-/* 2.2 - Q-14:
+/* 2.2 - Q-14: 
  * ============
  * 
  * The output is not correct with the given input as each value of the numbers are
